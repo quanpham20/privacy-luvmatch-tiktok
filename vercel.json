@@ -33,6 +33,10 @@
       "destination": "/data-deletion.html"
     },
     {
+      "source": "/(.*)tiktokCKVAb6BI0cOCtsvN6dK1kBGRqJPOfudB.txt",
+      "destination": "/tiktokCKVAb6BI0cOCtsvN6dK1kBGRqJPOfudB.txt"
+    },
+    {
       "source": "/(.*)tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt",
       "destination": "/tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt"
     }
