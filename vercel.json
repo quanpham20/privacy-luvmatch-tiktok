@@ -1,3 +1,9 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt",
+      "destination": "/tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt"
+    }
+  ]
 }
