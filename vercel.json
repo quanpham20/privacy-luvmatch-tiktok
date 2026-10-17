@@ -1,6 +1,38 @@
 {
-  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
+    {
+      "source": "/terms.html/",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/privacy.html/",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/data-deletion/",
+      "destination": "/data-deletion.html"
+    },
+    {
+      "source": "/data-deletion",
+      "destination": "/data-deletion.html"
+    },
     {
       "source": "/(.*)tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt",
       "destination": "/tiktoklZpJ3Xh8P7kvl3GXqTBkYNiBZrB7OAwE.txt"
