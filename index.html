@@ -3,68 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LuvMatch - Privacy Policy (TikTok OAuth)</title>
-  <meta name="description" content="Official Privacy Policy and TikTok User Data Deletion Instructions for LuvMatch mobile application. Compliant with TikTok for Developers and TikTok Platform Guidelines.">
+  <title>LuvMatch - Find Meaningful Connections & Dating</title>
+  <meta name="description" content="LuvMatch is the modern dating and social connection platform. Connect authentically with nearby matches, powered by secure TikTok Login.">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph for TikTok Crawler -->
-  <meta property="og:title" content="LuvMatch - Privacy Policy (TikTok OAuth)">
-  <meta property="og:description" content="Official Privacy Policy and Data Practices for LuvMatch with TikTok Login integration.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="LuvMatch - Dating & Meaningful Connections">
+  <meta property="og:description" content="Meet authentic people, match with verified profiles, and find your love on LuvMatch.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --primary: #FE2C55;
       --secondary: #25F4EE;
       --primary-hover: #E01E45;
-      --primary-50: #FFF1F4;
-      --primary-100: #FFE4E8;
+      --dark: #0F172A;
       --slate-50: #F8FAFC;
       --slate-100: #F1F5F9;
       --slate-200: #E2E8F0;
       --slate-600: #475569;
       --slate-700: #334155;
-      --slate-800: #1E293B;
       --slate-900: #0F172A;
-      --radius: 14px;
-      --shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --gradient-brand: linear-gradient(135deg, #FE2C55 0%, #FF6584 50%, #8A2387 100%);
+      --shadow-soft: 0 10px 30px -5px rgba(254, 44, 85, 0.15);
+      --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--slate-50);
-      color: var(--slate-800);
-      line-height: 1.7;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #FFFFFF;
+      color: var(--slate-900);
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 0 24px;
     }
 
+    /* Header */
     header {
-      background: #FFFFFF;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--slate-200);
       position: sticky;
       top: 0;
-      z-index: 50;
+      z-index: 100;
     }
 
-    .header-content {
+    .nav-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 70px;
+      height: 74px;
     }
 
-    .logo {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
@@ -74,552 +78,509 @@
       font-size: 22px;
     }
 
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
       background: linear-gradient(135deg, #000000 0%, #161823 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
       font-size: 20px;
-      position: relative;
       box-shadow: -2px -2px 0px 0px rgba(37, 244, 238, 0.7), 2px 2px 0px 0px rgba(254, 44, 85, 0.8);
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 20px;
     }
 
-    .nav-item {
+    .nav-link {
       text-decoration: none;
       color: var(--slate-600);
       font-weight: 600;
-      font-size: 14px;
-      padding: 6px 12px;
-      border-radius: 8px;
-      transition: all 0.2s;
+      font-size: 14.5px;
+      transition: color 0.2s;
     }
 
-    .nav-item:hover, .nav-item.active {
+    .nav-link:hover {
       color: var(--primary);
-      background: var(--primary-50);
     }
 
-    .lang-toggle {
-      display: flex;
-      background: var(--slate-100);
-      border-radius: 20px;
-      padding: 3px;
-      border: 1px solid var(--slate-200);
-    }
-
-    .lang-btn {
-      padding: 6px 14px;
-      border-radius: 16px;
-      border: none;
-      background: transparent;
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--slate-600);
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .lang-btn.active {
-      background: white;
-      color: var(--primary);
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-    .hero {
-      padding: 48px 0 28px;
-      text-align: center;
-    }
-
-    .badge {
+    .btn-login {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
-      background: var(--primary-50);
+      gap: 8px;
+      background: var(--dark);
+      color: white;
+      padding: 9px 18px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .btn-login:hover {
+      background: var(--primary);
+      transform: translateY(-1px);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 70px 0 50px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 10%, rgba(254, 44, 85, 0.08) 0%, transparent 60%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #FFF1F4;
       color: var(--primary);
-      border: 1px solid var(--primary-100);
-      padding: 5px 14px;
-      border-radius: 20px;
+      border: 1px solid #FECDD6;
+      padding: 6px 16px;
+      border-radius: 30px;
       font-size: 13px;
       font-weight: 700;
-      margin-bottom: 14px;
-      text-transform: uppercase;
+      margin-bottom: 20px;
       letter-spacing: 0.5px;
     }
 
-    h1 {
-      font-size: 36px;
+    .hero h1 {
+      font-size: 48px;
       font-weight: 800;
+      letter-spacing: -1.5px;
       color: var(--slate-900);
-      margin-bottom: 12px;
-      line-height: 1.25;
+      margin-bottom: 18px;
+      line-height: 1.15;
     }
 
-    .compliance-box {
-      background: #FDF2F4;
-      border: 1px solid #FECDD6;
-      border-radius: 12px;
-      padding: 16px 20px;
-      margin: 20px 0 32px;
-      text-align: left;
-      font-size: 14px;
-      color: #9F1239;
+    .hero h1 span {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--slate-600);
+      max-width: 640px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-cta {
       display: flex;
-      flex-direction: column;
-      gap: 6px;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
     }
 
-    .card {
-      background: white;
-      border-radius: var(--radius);
-      border: 1px solid var(--slate-200);
-      padding: 32px;
-      margin-bottom: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    h2 {
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--slate-900);
-      margin-bottom: 16px;
-      display: flex;
+    .btn-primary {
+      display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding-bottom: 12px;
-      border-bottom: 2px solid var(--slate-100);
-    }
-
-    h3 {
-      font-size: 17px;
-      font-weight: 700;
-      color: var(--slate-900);
-      margin: 20px 0 8px;
-    }
-
-    p {
-      color: var(--slate-700);
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 16px;
-      color: var(--slate-700);
-      font-size: 15px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .highlight-card {
-      background: #FFF1F4;
-      border: 1.5px solid #FECDD6;
-      border-radius: 12px;
-      padding: 22px;
-      margin: 20px 0;
-    }
-
-    .highlight-card h4 {
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 16px;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .steps-list {
-      list-style: none;
-      margin-left: 0;
-      counter-reset: step-counter;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 14px;
-    }
-
-    .steps-list li {
-      position: relative;
-      padding-left: 42px;
-      color: var(--slate-800);
-      font-size: 14.5px;
-    }
-
-    .steps-list li::before {
-      counter-increment: step-counter;
-      content: counter(step-counter);
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: var(--primary);
+      background: var(--gradient-brand);
       color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
       font-weight: 700;
-      font-size: 13px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-size: 15px;
+      text-decoration: none;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.25s;
     }
 
-    .btn {
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px -5px rgba(254, 44, 85, 0.35);
+    }
+
+    .btn-secondary {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: var(--primary);
-      color: white;
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-weight: 600;
-      font-size: 14px;
+      background: white;
+      color: var(--slate-900);
+      border: 1px solid var(--slate-200);
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
       text-decoration: none;
-      border: none;
-      cursor: pointer;
       transition: all 0.2s;
     }
 
-    .btn:hover {
-      background: var(--primary-hover);
+    .btn-secondary:hover {
+      background: var(--slate-50);
+      border-color: #CBD5E1;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0;
-      font-size: 14px;
-    }
-
-    th, td {
+    /* App Mockup / Highlights */
+    .mockup-container {
+      margin: 48px auto 60px;
+      max-width: 800px;
+      background: white;
       border: 1px solid var(--slate-200);
-      padding: 12px 16px;
-      text-align: left;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: center;
     }
 
-    th {
-      background: var(--slate-100);
+    .mockup-card {
+      background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+      color: white;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .mockup-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .mockup-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #FE2C55;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .mockup-badge {
+      background: rgba(37, 244, 238, 0.2);
+      color: #25F4EE;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
       font-weight: 700;
+    }
+
+    /* Features Grid */
+    .features-section {
+      padding: 60px 0;
+      background: var(--slate-50);
+      border-top: 1px solid var(--slate-200);
+      border-bottom: 1px solid var(--slate-200);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--slate-900);
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--slate-600);
+      font-size: 16px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: white;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      transition: all 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-card);
+      border-color: #FECDD6;
+    }
+
+    .feature-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #FFF1F4;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
       color: var(--slate-900);
     }
 
-    .contact-card {
-      background: var(--slate-900);
-      color: white;
-      border-radius: var(--radius);
-      padding: 32px;
-      margin-top: 24px;
+    .feature-card p {
+      font-size: 14.5px;
+      color: var(--slate-600);
+      line-height: 1.6;
     }
 
-    .contact-card h3 {
-      color: white;
-      margin-top: 0;
+    /* Legal & Developer Info Section */
+    .meta-details {
+      padding: 48px 0;
+      text-align: center;
     }
 
-    .contact-card p {
-      color: #94A3B8;
+    .meta-badge {
+      display: inline-block;
+      background: var(--slate-100);
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 13.5px;
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
     }
 
-    .contact-email {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #25F4EE;
-      font-weight: 600;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-
+    /* Footer */
     footer {
-      border-top: 1px solid var(--slate-200);
-      padding: 30px 0;
-      margin-top: 40px;
+      background: var(--dark);
+      color: white;
+      padding: 56px 0 32px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand h4 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      color: #94A3B8;
+      font-size: 14px;
+      max-width: 320px;
+    }
+
+    .footer-col h5 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: #25F4EE;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
       text-align: center;
       font-size: 13px;
-      color: var(--slate-600);
+      color: #64748B;
     }
 
-    .lang-content { display: none; }
-    .lang-content.active { display: block; }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 34px; }
+      .mockup-container { grid-template-columns: 1fr; }
+      .footer-content { grid-template-columns: 1fr; gap: 28px; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Sticky Header -->
+  <!-- Navigation -->
   <header>
-    <div class="container header-content">
-      <a href="index.html" class="logo">
-        <div class="logo-icon">🎵</div>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">🎵</div>
         <span>LuvMatch</span>
       </a>
-      
-      <div class="nav-links">
-        <a href="index.html" class="nav-item active">Privacy Policy</a>
-        <a href="terms.html" class="nav-item">Terms of Service</a>
-        <a href="data-deletion.html" class="nav-item">Data Deletion</a>
-      </div>
 
-      <div class="lang-toggle">
-        <button class="lang-btn active" id="btn-en" onclick="setLang('en')">English</button>
-        <button class="lang-btn" id="btn-vi" onclick="setLang('vi')">Tiếng Việt</button>
-      </div>
+      <nav class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="privacy.html" class="nav-link">Privacy Policy</a>
+        <a href="terms.html" class="nav-link">Terms of Service</a>
+        <a href="data-deletion.html" class="nav-link">Data Deletion</a>
+      </nav>
+
+      <a href="privacy.html" class="btn-login">
+        <span>TikTok OAuth</span>
+      </a>
     </div>
   </header>
 
-  <main class="container">
-
-    <!-- Hero Section -->
-    <div class="hero">
-      <div class="badge">TikTok for Developers Compliance</div>
-      <h1>Privacy Policy (TikTok Login OAuth)</h1>
-      <p style="color: var(--slate-600); max-width: 600px; margin: 0 auto;">
-        Application: <strong>LuvMatch</strong> &bull; TikTok Client Key: <strong>awfojt5u0tl4q8ho</strong>
-      </p>
-    </div>
-
-    <!-- TikTok Compliance Banner -->
-    <div class="compliance-box">
-      <div><strong>Notice for TikTok Developer Reviewers:</strong></div>
-      <div>
-        This document represents the official Privacy Policy and Data Practices for the <strong>LuvMatch</strong> application integrating <strong>TikTok Login Kit (OAuth 2.0)</strong>, in full compliance with the <strong>TikTok Developer Terms of Service</strong> and <strong>TikTok Commercial Terms</strong>.
-      </div>
-      <div>
-        Direct Navigation: <a href="terms.html" style="color:#E11D48; font-weight:700; text-decoration:underline;">Terms of Service &rarr;</a> &nbsp;|&nbsp; <a href="data-deletion.html" style="color:#E11D48; font-weight:700; text-decoration:underline;">User Data Deletion Instructions &rarr;</a>
-      </div>
-    </div>
-
-    <!-- ======================================================== -->
-    <!-- ENGLISH VERSION (Default for TikTok Reviewer)           -->
-    <!-- ======================================================== -->
-    <div id="content-en" class="lang-content active">
-
-      <!-- Section 1: Introduction -->
-      <section class="card">
-        <h2><span>1.</span> Introduction</h2>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">❤️ Next-Generation Dating Platform</div>
+        <h1>Find Meaningful Love &amp;<br><span>Real Connections</span></h1>
         <p>
-          Welcome to <strong>LuvMatch</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). We value your privacy and are committed to safeguarding personal data. This Privacy Policy details our policies regarding the collection, use, disclosure, and protection of personal data when users interact with the LuvMatch mobile application and services.
+          LuvMatch connects authentic singles near you based on genuine vibe, verified interests, and mutual chemistry. Seamlessly sign in with TikTok.
         </p>
-        <p>
-          By connecting your TikTok account to LuvMatch, you consent to the processing of your information in accordance with this Privacy Policy and TikTok Developer guidelines.
-        </p>
-      </section>
-
-      <!-- Section 2: TikTok Login Kit & OAuth 2.0 Integration -->
-      <section class="card">
-        <h2><span>2.</span> TikTok Login Kit &amp; Scopes Used</h2>
-        <p>
-          LuvMatch offers <strong>TikTok Login Kit (OAuth 2.0)</strong> under Client Key <code>awfojt5u0tl4q8ho</code> to allow users to authenticate quickly and securely. During TikTok Login, we request only the essential permissions:
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Scope Requested</th>
-              <th>Data Collected</th>
-              <th>Purpose of Processing</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>user.info.basic</strong></td>
-              <td>Display Name, Avatar URL, TikTok Open ID, Union ID</td>
-              <td>To authenticate your account identity, generate your LuvMatch user profile, and display your verified name and photo to compatible matches.</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          <strong>No Unauthorized Posting or Access:</strong> LuvMatch does NOT request permission to publish videos, modify your TikTok profile, view private videos, or access direct messages. We strictly access read-only public profile data to authenticate you.
-        </p>
-        <p>
-          <strong>Strict Prohibition on Selling Data:</strong> We strictly NEVER sell, rent, monetize, or transfer your TikTok data to data brokers, ad exchanges, or unauthorized third parties for marketing purposes.
-        </p>
-      </section>
-
-      <!-- Section 3: Other Data We Collect -->
-      <section class="card">
-        <h2><span>3.</span> Additional Data We Collect</h2>
-        <ul>
-          <li><strong>Profile &amp; Preferences:</strong> Biography, dating interests, age/birthday, and additional photos uploaded to LuvMatch.</li>
-          <li><strong>Geographic Location (GPS):</strong> Approximate or precise location coordinates (only with your explicit device permission) to discover and calculate distance to nearby matches.</li>
-          <li><strong>Interactions &amp; Messages:</strong> Match history (Likes, Passes), mutual matches, and encrypted chat messages exchanged between users.</li>
-          <li><strong>Device &amp; Telemetry Data:</strong> Mobile device model, operating system (iOS/Android), and push notification tokens (FCM/APNs).</li>
-        </ul>
-      </section>
-
-      <!-- Section 4: Data Deletion Instructions (TikTok) -->
-      <section class="card" id="data-deletion">
-        <h2><span>4.</span> TikTok User Data Deletion Instructions</h2>
-        <p>
-          In accordance with TikTok Developer Policies and global data protection regulations (GDPR/CCPA), users have the right to request the deletion of all data acquired through TikTok Login at any time. You can choose any of the following options:
-        </p>
-
-        <!-- Method A: Revoke via TikTok -->
-        <div class="highlight-card">
-          <h4>Option A: Revoke Access via TikTok Mobile App</h4>
-          <ol class="steps-list">
-            <li>Open the <strong>TikTok</strong> app on your mobile device.</li>
-            <li>Go to your <strong>Profile</strong> &gt; tap the <strong>Menu (3 lines)</strong> in the top right &gt; select <strong>Settings and privacy</strong>.</li>
-            <li>Select <strong>Security &amp; permissions</strong> &gt; tap <strong>Manage app permissions</strong>.</li>
-            <li>Locate <strong>LuvMatch</strong> in the list of authorized applications.</li>
-            <li>Tap on LuvMatch and select <strong>Remove access</strong>. This immediately revokes LuvMatch&rsquo;s access to your TikTok credentials.</li>
-          </ol>
+        <div class="hero-cta">
+          <a href="#features" class="btn-primary">Explore Features &darr;</a>
+          <a href="privacy.html" class="btn-secondary">View Privacy Policy</a>
         </div>
+      </div>
+    </section>
 
-        <!-- Method B: In-App Deletion -->
-        <div class="highlight-card">
-          <h4>Option B: Permanent Account Deletion in LuvMatch App</h4>
-          <ol class="steps-list">
-            <li>Launch the <strong>LuvMatch</strong> application.</li>
-            <li>Go to <strong>Profile</strong> &gt; <strong>Settings</strong>.</li>
-            <li>Scroll to the bottom and select <strong>Delete Account Permanently</strong>.</li>
-            <li>Confirm deletion. All synced photos, match records, chat logs, and TikTok IDs will be purged immediately from our active database.</li>
-          </ol>
-        </div>
-
-        <!-- Method C: Email Request -->
-        <div class="highlight-card">
-          <h4>Option C: Direct Support Request</h4>
-          <p style="font-size:14.5px; margin-bottom:12px;">
-            Send an email to our developer team with the subject <em>&ldquo;TikTok Data Deletion Request - LuvMatch&rdquo;</em>:
+    <!-- App Overview Mockup Section -->
+    <div class="container">
+      <div class="mockup-container">
+        <div>
+          <span style="color:var(--primary); font-weight:700; font-size:13px; text-transform:uppercase;">Authentic Matches</span>
+          <h3 style="font-size:26px; font-weight:800; margin:8px 0 14px; line-height:1.2;">Designed for Genuine Dating &amp; Social Connections</h3>
+          <p style="color:var(--slate-600); font-size:15px; margin-bottom:16px;">
+            No bots, no fake profiles. With TikTok Login integration, LuvMatch ensures quick account onboarding while keeping your personal data completely private and safe.
           </p>
-          <a href="mailto:pdquan20@gmail.com?subject=TikTok%20Data%20Deletion%20Request%20-%20LuvMatch&body=Hello%20LuvMatch%20Support%2C%0A%0AI%20would%20like%20to%20request%20the%20permanent%20deletion%20of%20all%20my%20data%20associated%20with%20TikTok%20Login.%0A%0AMy%20TikTok%20Username%20%2F%20Open%20ID%3A%20" class="btn">
-            ✉️ Email Deletion Request (pdquan20@gmail.com)
-          </a>
+          <ul style="color:var(--slate-700); font-size:14px; margin-left:18px; line-height:1.8;">
+            <li>Smart proximity-based discovery deck</li>
+            <li>Instant profile verification via TikTok Login Kit</li>
+            <li>Encrypted one-on-one direct messaging</li>
+          </ul>
         </div>
-      </section>
-
-      <!-- Section 5: Data Retention & Security -->
-      <section class="card">
-        <h2><span>5.</span> Data Storage, Retention &amp; Security</h2>
-        <p>
-          All data transmitted between LuvMatch and our backend servers (<code>auth.ubiw.space</code>) is strictly encrypted in transit using <strong>HTTPS / TLS 1.3</strong> protocols.
-        </p>
-        <p>
-          TikTok authentication tokens and identifiers are retained only as long as you maintain an active account. Upon deletion, data is removed immediately from active servers, and backup copies are completely erased within 30 days.
-        </p>
-      </section>
-
-      <!-- Section 6: Contact Information -->
-      <div class="contact-card">
-        <h3>Contact &amp; Developer Information</h3>
-        <p>If you have any questions or data inquiries regarding LuvMatch or TikTok OAuth, please contact us:</p>
-        <p>
-          Developer: <strong>Pham Dang Quan (quanpham20)</strong><br>
-          Application: <strong>LuvMatch</strong><br>
-          TikTok Client Key: <strong>awfojt5u0tl4q8ho</strong><br>
-          Official Email: <a href="mailto:pdquan20@gmail.com" class="contact-email">pdquan20@gmail.com</a>
-        </p>
+        <div class="mockup-card">
+          <div class="mockup-header">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div class="mockup-avatar">❤️</div>
+              <div>
+                <div style="font-weight:700; font-size:16px;">LuvMatch Dating</div>
+                <div style="font-size:12px; color:#94A3B8;">Online &bull; Nearby</div>
+              </div>
+            </div>
+            <div class="mockup-badge">&#x2713; Verified</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.06); padding:16px; border-radius:12px; font-size:13.5px; line-height:1.6;">
+            &ldquo;Ready to discover someone who truly matches your energy? LuvMatch connects you directly with verified singles in your city.&rdquo;
+          </div>
+          <div style="margin-top:18px; font-size:12px; color:#94A3B8; text-align:center;">
+            Protected by end-to-end security &amp; privacy controls.
+          </div>
+        </div>
       </div>
-
     </div>
 
-    <!-- ======================================================== -->
-    <!-- TIẾNG VIỆT (Dành cho người dùng Việt Nam)               -->
-    <!-- ======================================================== -->
-    <div id="content-vi" class="lang-content">
-
-      <section class="card">
-        <h2><span>1.</span> Giới thiệu</h2>
-        <p>
-          Chào mừng bạn đến với <strong>LuvMatch</strong>. Chúng tôi tôn trọng quyền riêng tư của bạn và cam kết bảo vệ an toàn thông tin cá nhân. Chính sách này giải thích cách LuvMatch thu thập, xử lý và bảo vệ dữ liệu khi bạn sử dụng tính năng Đăng nhập bằng TikTok (TikTok Login Kit OAuth).
-        </p>
-      </section>
-
-      <section class="card">
-        <h2><span>2.</span> Quyền Đăng nhập TikTok &amp; Dữ liệu Thu thập</h2>
-        <p>
-          Khi bạn đăng nhập vào LuvMatch qua TikTok với Client Key <code>awfojt5u0tl4q8ho</code>, chúng tôi chỉ yêu cầu quyền tối thiểu:
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Quyền yêu cầu</th>
-              <th>Dữ liệu nhận được</th>
-              <th>Mục đích sử dụng</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>user.info.basic</strong></td>
-              <td>Tên hiển thị, Ảnh đại diện, TikTok Open ID / Union ID</td>
-              <td>Xác thực danh tính, tạo tài khoản hồ sơ LuvMatch và hiển thị tên ảnh cho các đối tượng ghép đôi phù hợp.</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          <strong>Cam kết bảo mật:</strong> Chúng tôi KHÔNG đăng bài lên TikTok của bạn, KHÔNG đọc tin nhắn hay video riêng tư, và tuyệt đối KHÔNG bán dữ liệu cho bên thứ 3.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2><span>3.</span> Hướng dẫn Xóa dữ liệu người dùng TikTok</h2>
-        <div class="highlight-card">
-          <h4>Cách 1: Gỡ quyền truy cập trên TikTok</h4>
-          <ol class="steps-list">
-            <li>Mở ứng dụng <strong>TikTok</strong> trên điện thoại.</li>
-            <li>Vào <strong>Hồ sơ</strong> &gt; chạm menu <strong>3 dấu gạch ngang</strong> &gt; chọn <strong>Cài đặt và quyền riêng tư</strong>.</li>
-            <li>Chọn <strong>Bảo mật &amp; quyền</strong> &gt; chọn <strong>Quản lý quyền ứng dụng</strong>.</li>
-            <li>Tìm <strong>LuvMatch</strong> và chọn <strong>Xóa quyền truy cập (Remove access)</strong>.</li>
-          </ol>
+    <!-- Core Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why People Choose LuvMatch</h2>
+          <p>Everything you need for a comfortable, authentic, and safe dating experience.</p>
         </div>
 
-        <div class="highlight-card">
-          <h4>Cách 2: Xóa tài khoản vĩnh viễn trong App LuvMatch</h4>
-          <ol class="steps-list">
-            <li>Mở app <strong>LuvMatch</strong> &gt; vào <strong>Hồ sơ</strong> &gt; <strong>Cài đặt</strong>.</li>
-            <li>Chọn <strong>Xóa tài khoản vĩnh viễn</strong> để xóa sạch mọi dữ liệu, hình ảnh và tin nhắn ngay lập tức.</li>
-          </ol>
-        </div>
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant TikTok Login</h3>
+            <p>Onboard in seconds using verified TikTok OAuth 2.0 with zero password friction. We never post to your profile.</p>
+          </div>
 
-        <div class="highlight-card">
-          <h4>Cách 3: Gửi email yêu cầu hỗ trợ</h4>
-          <p style="font-size:14px; margin-bottom:12px;">Gửi email đến <strong>pdquan20@gmail.com</strong> với tiêu đề <em>"Yêu cầu xóa dữ liệu TikTok - LuvMatch"</em>.</p>
-          <a href="mailto:pdquan20@gmail.com?subject=Yeu%20cau%20xoa%20du%20lieu%20TikTok%20LuvMatch" class="btn">
-            ✉️ Gửi Email Yêu Cầu Xóa Dữ Liệu
-          </a>
-        </div>
-      </section>
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Proximity Matching</h3>
+            <p>Filter and connect with nearby singles within your preferred radius using secure, high-precision location controls.</p>
+          </div>
 
-      <div class="contact-card">
-        <h3>Thông tin Liên hệ</h3>
-        <p>Nhà phát triển: <strong>Phạm Đăng Quân (quanpham20)</strong><br>
-        Ứng dụng: <strong>LuvMatch</strong><br>
-        TikTok Client Key: <strong>awfojt5u0tl4q8ho</strong><br>
-        Email: <a href="mailto:pdquan20@gmail.com" class="contact-email">pdquan20@gmail.com</a></p>
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Privacy By Design</h3>
+            <p>Full control over your visibility, Ghost Mode, and simple one-click user data deletion anytime.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Encrypted Messaging</h3>
+            <p>Safely chat with mutual matches with strict anti-harassment safeguards and community protection.</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-
+    <!-- Developer & Compliance Notice -->
+    <section class="meta-details container">
+      <div class="meta-badge">
+        App: <strong>LuvMatch</strong> &bull; TikTok Client Key: <strong>awfojt5u0tl4q8ho</strong> &bull; Support: <strong>pdquan20@gmail.com</strong>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer with Mandatory Legal Links (Required by TikTok) -->
   <footer>
-    <div class="container">
-      <p>&copy; <span id="year">2024</span> LuvMatch. TikTok for Developers Terms Compliant.</p>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>❤️ LuvMatch</h4>
+        <p>The modern mobile dating application engineered for meaningful connections. Compliant with international privacy standards.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal &amp; Compliance</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="data-deletion.html">Data Deletion Instructions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Support &amp; Inquiries</h5>
+        <ul>
+          <li><a href="mailto:pdquan20@gmail.com">pdquan20@gmail.com</a></li>
+          <li><a href="https://github.com/quanpham20/privacy-luvmatch-tiktok" target="_blank">GitHub Repository</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      &copy; <span id="year">2024</span> LuvMatch. All rights reserved. TikTok for Developers Terms Compliant.
     </div>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    function setLang(lang) {
-      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.lang-content').forEach(c => c.classList.remove('active'));
-
-      document.getElementById('btn-' + lang).classList.add('active');
-      document.getElementById('content-' + lang).classList.add('active');
-    }
   </script>
-
 </body>
 </html>
